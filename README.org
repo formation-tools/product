@@ -27,37 +27,64 @@
   - FAQ-like, leveraging QA tooling
   - knowledge graph-like to present visual hierarchies of information for faster navigation
 
+** Competitive Landscape
+
+Ranked in order of how close they are to solving the problem our way (top is closer, lower is further away)!
+
+| Competitor | Killer feature   | Missing feature                                                                   |
+|------------+------------------+-----------------------------------------------------------------------------------|
+| [[https://www.archbee.io/integrations][Archbee]]    |                  | Org-capabilities (tasks, planning, productivity)                                  |
+| Notion     | mobile-firstness | openness (proprietary formats, complex API with /block/ as primitive entity)      |
+| Confluence | Jira             | openness (API is horrible, centralized)                                           |
+| Org        | Emacs            | inaccessible to non-Emacs users, too flexible when you start tinkering with elisp |
+|            |                  |                                                                                   |
+
+
 * Vision Statement
 
 For *smaller tech startups* where information management and knowledge management are key to success, who need to *maintain an overview over knowledge-work and coordinate work between disciplines*, the =formation.tools= platform is a /productivity, collaboration and knowledge-management/ suite that is *API-centric, ChatOps-centric and plaintext-centric*.
 
-- smaller tech startups
+** Why's
+
+- why *smaller tech startups*?
   - already familiar with change management (for their code)
-  - existential need to own their information game
+  - existential need to ace their "information game"
   - already familiar with git
-- API-centric
+- why *API-centric*?
   - all features should accessible through a public API
     - to simplify integrations with other systems (in the spirit of *open systems*)
   - users and customers should be enabled to tie the solution into their own tooling
-  - good tools make their use easy ⭐
-    - support or guidance needs to be unnecessary or built-in
-- ChatOps-centric
-  - all features should be accessible through chat
+  - *good tools make their use easy* ⭐
+    - support or guidance needs to be unnecessary (good lithmus test) or built-in
+- why *ChatOps-centric*?
+  - all features should be accessible through chat because of accessibility
   - many folks will not have access to their forge or wiki on the go, but they will have access to their chat tool -- work can't be accessible to those behind computers only, it's 2022+ 🤷🏿‍♂️
-- plaintext-centric
+- why *plaintext-centric*
   - everything should be editable as plaintext
     - trackable in git
-      - history with traceability of who contributed which segment of the text (i.e.: git-blame, relates to /provenance/)
-      - familiar, tried and tested paradigm for distributed change management
-      - facilitates text approval processes that are akin to merge processes (think: PR's) -- more documents should be written this way
-  - stick to Org and Markdown as much as possible
+      - *distributed* version management
+        - derisks data loss
+        - provides historic context
+      - history with *traceability* of who contributed which segment of the text (i.e.: git-blame, relates to /provenance/)
+        - clear path towards rolling back to previous state
+      - familiar, *tried and tested paradigm* for distributed change management
+      - facilitates more *explicit approval processes* that are akin to merge processes (think: PR's) -- more documents should be written this way
+  - stick to *Org and Markdown* as much as possible
     - existing standards
-    - easy to read (practically WYSIWYG)
-    - Org allows for productivity workflows that are underleveraged
+    - leverage and supercharge that which is already there ⭐
+      - don't add to the problem by introducing new standards
+    - easy to read (almost WYSIWYG)
+    - Org allows for *productivity* workflows that are underleveraged
 
 * Customer
 
-Tech startups where engineers, product and business folks need short input-to-output cycles.
+Tech startups where engineers, product and business folks need short input-to-output cycles on knowledge-management in the area of numbers (data), copy (text, prose) and designs (graphs, diagrams).
+
+Tech startups need to draft and maintain a variety of documents product that may be either of the following:
+- product vision and strategy briefs
+- product design documents
+- technical design documents (ADRs, technical architecture, coding guidelines, review guidelines/playbooks, coding reference material, configuration and release management briefs, security guidelines, READMEs, etc.)
+- HR briefs (company manuals, culture handbooks, appraisal formats, etc.)
 
 * User
 
