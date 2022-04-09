@@ -3,20 +3,19 @@
 :END:
 #+title: Product Vision formation.tools
 
-* High-level
+* Goal
 
-** Goal
-
-To facilitate *joyful collaboration* and efficient *knowledge sharing* between teams in tech startups *in the office and on-the-go*
+🎯 Facilitate *joyful collaboration* and efficient *knowledge sharing* between teams in tech startups that may be *in the office or on-the-go*.
 
 - joyful collaboration
   - snappy tooling (facilitate the speed of thought)
   - clear overview (to simplify recall)
-  - clear ownership (to allow teams to know who to loop in for clarification)
-  - fast recall (no more information graveyards)
+  - clear ownership (to allow teams to know who to loop in for clarification or for review, grant teams to tools to grant owners observability over changes within their owned scope)
+  - effective recall (erradicate /information graveyards/)
   - pleasant to use
     - playful element?
     - gamification? 🎮
+    - make users want to use this
   - why
     - current tooling is frustrating to use
     - current tooling is slow
@@ -28,7 +27,7 @@ To facilitate *joyful collaboration* and efficient *knowledge sharing* between t
   - FAQ-like, leveraging QA tooling
   - knowledge graph-like to present visual hierarchies of information for faster navigation
 
-** Vision Statement
+* Vision Statement
 
 For *smaller tech startups* where information management and knowledge management are key to success, who need to *maintain an overview over knowledge-work and coordinate work between disciplines*, the =formation.tools= platform is a /productivity, collaboration and knowledge-management/ suite that is *API-centric, ChatOps-centric and plaintext-centric*.
 
@@ -41,9 +40,10 @@ For *smaller tech startups* where information management and knowledge managemen
     - to simplify integrations with other systems (in the spirit of *open systems*)
   - users and customers should be enabled to tie the solution into their own tooling
   - good tools make their use easy ⭐
+    - support or guidance needs to be unnecessary or built-in
 - ChatOps-centric
   - all features should be accessible through chat
-  - many teams will not have access to their forge or wikis on the go, but they will have access to their chat tool -- work can't be accessible to those behind computers only, it's 2022+
+  - many folks will not have access to their forge or wiki on the go, but they will have access to their chat tool -- work can't be accessible to those behind computers only, it's 2022+ 🤷🏿‍♂️
 - plaintext-centric
   - everything should be editable as plaintext
     - trackable in git
@@ -55,26 +55,35 @@ For *smaller tech startups* where information management and knowledge managemen
     - easy to read (practically WYSIWYG)
     - Org allows for productivity workflows that are underleveraged
 
-** Customer
+* Customer
 
 Tech startups where engineers, product and business folks need short input-to-output cycles.
 
-** User
+* User
 
 - those who need to document information for their future selves and colleagues
   - answering questions
 - those who need information on a particular company-specific topic
-  - querying questions
+  - asking questions
 
-** Value Proposition
+** Example
 
-** Product Objectives
+Engineers documenting in repository READMEs, product folks documenting in [Confluence or alt 🤬] and business folks documenting in spreadsheets versioned by file prefixes 😭 is a collaboration paradigm where too much uncertainty exists about the notion of a /source of truth/ leading to the following question:
+- Is the spreadsheet I'm looking at autoritative?
+- What is data based on or derived from?
+- When was it last refreshed/retrieved?
+- Who has redacted this data over time?
+- What is the narrative around the data that may not fit within the rigid structure of the format chosen?
+
+* TODO Value Proposition
+
+* TODO Product Objectives
 
 Tools to enable and foster collaboration between people.
 
-** Defintions
+* TODO Definitions
 :PROPERTIES:
-:CUSTOM_ID: defintions
+:CUSTOM_ID: definitions
 :END:
 
 - communication
