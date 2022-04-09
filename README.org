@@ -1,0 +1,82 @@
+:PROPERTIES:
+:CUSTOM_ID: formation.tools/product-vision
+:END:
+#+title: Product Vision formation.tools
+
+* High-level
+
+** Goal
+
+To facilitate *joyful collaboration* and efficient *knowledge sharing* between teams in tech startups *in the office and on-the-go*
+
+- joyful collaboration
+  - snappy tooling (facilitate the speed of thought)
+  - clear overview (to simplify recall)
+  - clear ownership (to allow teams to know who to loop in for clarification)
+  - fast recall (no more information graveyards)
+  - pleasant to use
+    - playful element?
+    - gamification? 🎮
+  - why
+    - current tooling is frustrating to use
+    - current tooling is slow
+    - current tooling feels like a chore
+    - current tooling is proprietary and locks users in
+    - *fun work is done work* ⭐
+- knowledge sharing
+  - wiki-like
+  - FAQ-like, leveraging QA tooling
+  - knowledge graph-like to present visual hierarchies of information for faster navigation
+
+** Vision Statement
+
+For *smaller tech startups* where information management and knowledge management are key to success, who need to *maintain an overview over knowledge-work and coordinate work between disciplines*, the =formation.tools= platform is a /productivity, collaboration and knowledge-management/ suite that is *API-centric, ChatOps-centric and plaintext-centric*.
+
+- smaller tech startups
+  - already familiar with change management (for their code)
+  - existential need to own their information game
+  - already familiar with git
+- API-centric
+  - all features should accessible through a public API
+    - to simplify integrations with other systems (in the spirit of *open systems*)
+  - users and customers should be enabled to tie the solution into their own tooling
+  - good tools make their use easy ⭐
+- ChatOps-centric
+  - all features should be accessible through chat
+  - many teams will not have access to their forge or wikis on the go, but they will have access to their chat tool -- work can't be accessible to those behind computers only, it's 2022+
+- plaintext-centric
+  - everything should be editable as plaintext
+    - trackable in git
+      - history with traceability of who contributed which segment of the text (i.e.: git-blame, relates to /provenance/)
+      - familiar, tried and tested paradigm for distributed change management
+      - facilitates text approval processes that are akin to merge processes (think: PR's) -- more documents should be written this way
+  - stick to Org and Markdown as much as possible
+    - existing standards
+    - easy to read (practically WYSIWYG)
+    - Org allows for productivity workflows that are underleveraged
+
+** Customer
+
+Tech startups where engineers, product and business folks need short input-to-output cycles.
+
+** User
+
+- those who need to document information for their future selves and colleagues
+  - answering questions
+- those who need information on a particular company-specific topic
+  - querying questions
+
+** Value Proposition
+
+** Product Objectives
+
+Tools to enable and foster collaboration between people.
+
+** Defintions
+:PROPERTIES:
+:CUSTOM_ID: defintions
+:END:
+
+- communication
+- intel
+- relations

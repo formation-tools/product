@@ -1,0 +1,82 @@
+#+title: Bibliography
+
+* The Only Product Vision Template You’ll Ever Need
+:PROPERTIES:
+:BIB_TITLE: The Only Product Vision Template You’ll Ever Need
+:BIB_BTYPE: misc
+:CUSTOM_ID:
+:BIB_AUTHOR: Janna Bastow
+:BIB_HOWPUBLISHED: https://www.prodpad.com/blog/product-vision-template/
+:BIB_MONTH: March
+:BIB_YEAR: 2015
+:BIB_NOTE:
+:BIB_ANNOTE:
+:END:
+
+Answer the following questions:
+
+* What is a Product Vision Statement?
+
+:PROPERTIES:
+:BIB_TITLE: What is a Product Vision Statement?
+:BIB_BTYPE: misc
+:CUSTOM_ID:
+:BIB_HOWPUBLISHED: https://www.productplan.com/glossary/product-vision/
+:BIB_NOTE:
+:BIB_ANNOTE:
+:END:
+
+** Why
+
+To help inform:
+- how to prioritize features
+- which markets to target
+
+** Objecive
+
+Clearly explain why your product exists and your approach to running it. This could be a mission statement, tenets or principles. The important thing is that you believe in them, and by pinning them at he top of every roadmap it will be clear if what follows in the roadmap doesn't match your principles. [Ian McAllister, AirBnB]
+
+** Product Vision Statement Examples
+
+- Google: Provide acccess to the world's information in one click
+- Sonos: Fill every home with music
+- Instagram: To capture and share the world's moments
+- Uber: Evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers.
+- LinkedIn: To connect the world's professionals and make them more productive and successful.
+
+** Product Vision Statement Template
+
+#+begin_quote
+For [our target customer], who [customer's need], the [product] is a [product category or description] that [unique benefits and selling points].
+
+Unlike [competitors or current models], our product [main differentiators].
+#+end_quote
+
+* How to define a product vision (with examples)
+:PROPERTIES:
+:BIB_TITLE: How to define a product vision (with examples)Statement?
+:BIB_BTYPE: misc
+:CUSTOM_ID:
+:BIB_AUTHOR: Christian Strunk
+:BIB_HOWPUBLISHED: https://www.christianstrunk.com/blog/product-vision
+:BIB_NOTE:
+:BIB_ANNOTE:
+:END:
+
+- product vision
+  - describes future state of a product that a co or team desires to achieve
+  - a goal
+  - foundation for
+    - prod strategy
+    - prod dev roadmap
+    - backlog & planning
+    - execution & prod launch
+  - content
+    1. reason for co to exist
+       - focused on customer
+    2. looking into future
+       - 3 to 5 years
+    3. clear state of prod
+    4. goal for co/team to achieve
+       - big and bold?!?
+       - goals should be underlined with motivation behind it (answer *why*)
