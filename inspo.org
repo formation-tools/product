@@ -1,0 +1,78 @@
+#+TITLE: Inspiration
+
+* Kiln
+
+[[file:img/branding-truestory-flow.png]]
+
+- ➕ Minimalist layout
+  - clean-ish UI
+  - very subdued pallete
+- ➖ object of interest don't really stand out
+  - mostly same pallete (with the exception of some blue tones) as everything else
+  - mostly stands out because of the density of those components
+
+* Archbee
+
+see [[https://roadmap.archbee.io/][roadmap]], [[https://www.archbee.io/alternatives/notion-alternative][comparison as Notion alt]], [[https://www.archbee.io/alternatives/confluence-alternative][comparison as Confluence alt]]
+
+[[file:img/archbee-wiki-kb-6059dfc0e70d783fa2a00eb2_Screen Shot 2021-03-23 at 2.31.33 PM-p-2000.png]]
+
+- ➕ custom blocks
+  - not just formatted text but also diagramming blocks
+- ➖ No task-management/planning coverage
+  - only basic checklist completion tracking
+  - Org would add this
+  - thesis ❓: proactive knowledge management benefits from productivity/task-management primitives built-in within the suite where knowledge is managed
+- ➖ Git access only with the mid-tier plan
+  - expensive at 125 USD/mo for 10 seats (see [[https://www.archbee.io/pricing][pricing]])
+  - not git-centric
+- ➖ API-access only with the mid-tier plan
+  - expensive at 125 USD/mo for 10 seats (see [[https://www.archbee.io/pricing][pricing]])
+  - not API-centric
+
+** Docs
+
+*** Developer Docs
+
+[[file:img/archbee-dev-docs-5f86d07e87d6921f5f971c24_dev docs-p-2000.png]]
+
+*** Wiki
+
+[[file:img/archbee-wiki-kb-6059dfc0e70d783fa2a00eb2_Screen Shot 2021-03-23 at 2.31.33 PM-p-2000.png]]
+
+** Editing
+
+sourced from https://www.archbee.io/alternatives/confluence-alternative and https://www.archbee.io/alternatives/notion-alternative
+
+*** Markdown
+
+[[file:img/archbee-edit-markdown-611a721434c6edd00b68f8bf_archbee-markdown-shortcuts-min.gif]]
+
+*** In-line Commenting
+
+[[file:img/archbee-edit-comments-611a720ea07d62a923c30cb7_archbee-inline-comments-min.gif]]
+
+*** Custom Blocks
+
+[[file:img/archbee-edit-blocks-custom-6246f6d9f671607542292635_archbee.custom-blocks.gif]]
+
+*** Checklists
+
+As Org-sy as it gets 🤷🏿‍♂️ as this is as much as Markdown offers (within the shared scope of the standard).
+
+[[file:img/archbee-edit-checklist-611a7210f7e26428c33121d0_archbee-link-person-mentions-min.gif]]
+
+*** Drag-and-Drop Organization
+
+[[file:img/archbee-drag-drop-611a7210f7e264235f3121cf_archbee-drag-and-drop-min.gif]]
+
+
+* GitHub
+
+- ➕ clean UI (clearer than GitLab IMHO)
+  - we don't want to be the "ugly open source" tool
+- ➖ still very old-school navigation
+  - pages are new renders, not really SPA (may be a bit of a Rails thing ❓)
+  - not always snappy
+- ➖ context missing when away from top
+  - navigation controls are visible only when at the top of a page
