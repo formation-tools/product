@@ -1,0 +1,54 @@
+#+TITLE: Roadmap
+#+TODO: IDEA SCOPE INSKETCH INDEV | DONE(d)
+
+* IDEA Login with GitHub
+
+As a GitHub user, I want to be able to login with my GitHub handle and just collaborate in a formation.tools space.
+
+* IDEA Present Org file
+
+As a non-Emacs user, I want to be able to conveniently read Org-files.
+
+As an Emacs user, I want to be able to obtain a better visual overview of Org-files without too much tinkering in Elisp.
+
+** IDEA Display header states for the active file
+
+#+begin_quote
+Org headers can have a TODO status that is user-defined .e.g: TODO \rightarrow DONE or IDEA \rightarrow SCOPE \rightarrow TODO \rightarrow REVIEW \rightarrow DONE (see [[https://orgmode.org/guide/Multi_002dstate-Workflow.html][Multi-state workflows]]).
+#+end_quote
+
+As a reader, I want a quick overview of the header states that are valid for a given file. Annotation of each state with a different color would be ideal.
+
+In Emacs, the TODO and DONE states are the defaults where "TODO" is displayed in red and "DONE" is displayed in green to provide a simple visual overview.
+
+In Org, the =#+TODO= keyword can be used to indicate the states for a file. Multiple workflows can be described through the TODO keyword.
+
+See [[file:examples/todos.org][demonstrator of multi-state workflows]].
+
+** IDEA Present a TOC of an Org file
+
+As a reader, I want quick access to a TOC (table of contents) that outlines all sections in a document until the 3rd level of depth.
+
+The TOC should display header state annotations.
+
+*** IDEA TOC-to-section click-through
+
+As a reader, I want to be able to quickly navigate to a section by clicking its corresponding entry in a table of contents view.
+
+** IDEA Present all headers as collapsible sections
+
+As a reader, I want to be able to collapse sections that I am not currently reading or interested in to focus better on relevant text or overview.
+
+As a reader, I want to be able to expand sections that I am interested in to reveal their content.
+
+** IDEA Emphasize states such that it is clear which tasks are part of an Org file
+
+Within the TOC as well as within the main view, state information should be emphasized in a way that makes it easy to recognize.
+
+** IDEA Show author for part of a document when hovering over it
+
+As a reader, I want to see who last changed a particular part of a document (line, section or other) in a manner similar to =git blame=.
+
+When hovering over a section, a listing of all who contributed to that section would be expected.
+
+When hovering over a line, a list of the last person to commit that line would be expected.

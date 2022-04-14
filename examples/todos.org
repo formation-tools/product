@@ -1,0 +1,27 @@
+#+TODO: TODO(t) | DONE(d)
+#+TODO: REPORT(r) BUG(b) KNOWNCAUSE(k) | FIXED(f)
+#+TODO: | CANCELED(c)
+
+This document relates to the behavior of TODO's in Emacs, in particular [[https://orgmode.org/guide/Multi_002dstate-Workflow.html][multi-state workflows]].
+
+* DONE Draft a file that demonstrates TODO usage
+
+This is the file, so we can consider this done but we won't because we need a file to test with where there are a few TODOs that are not yet done.
+
+* DONE Progress a basic TODO to its next state
+
+By navigating to the the section and stepping through the states list once, we should move from TODO to DONE.
+
+* TODO Examine how multi-state workflows progress state
+
+With multi-state workflows, there is no automatic progression when ~org-todo~ (mapped to =C-c C-t= by default) is invoked.
+
+Observe how in this file, the invocation of the ~org-todo~ command pulled up a prompt where we can select the next state. This is different from the non-multi-state workflow usage where the progression is automatically made (from TODO to DONE to stateless and then back to TODO).
+
+[[file:../img/emacs-screenshot-with-multi-state-todos.png]]
+
+In multi-state workflows, Emacs should be able to infer in which one of the workflow tracks we are (in this file we defined three) and just progress within that track. That this wasn't working in my setup is perhaps a configuration issue on my part.
+
+* CANCELED Use reStructuredText
+
+🙊 Just needed a reason to use "CANCELED" in this document so here we go. 🤣
