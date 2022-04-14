@@ -1,8 +1,8 @@
 #+TITLE: Inspiration
 
-* Kiln
+Some impressions or inspiration to help communicate the "feel" or "look" that we are going or what is out there already in terms of relatable tooling.
 
-[[file:img/branding-truestory-flow.png]]
+* Kiln
 
 - ➕ Minimalist layout
   - clean-ish UI
@@ -11,11 +11,11 @@
   - mostly same pallete (with the exception of some blue tones) as everything else
   - mostly stands out because of the density of those components
 
+[[file:img/branding-truestory-flow.png]]
+
 * Archbee
 
 see [[https://roadmap.archbee.io/][roadmap]], [[https://www.archbee.io/alternatives/notion-alternative][comparison as Notion alt]], [[https://www.archbee.io/alternatives/confluence-alternative][comparison as Confluence alt]]
-
-[[file:img/archbee-wiki-kb-6059dfc0e70d783fa2a00eb2_Screen Shot 2021-03-23 at 2.31.33 PM-p-2000.png]]
 
 - ➕ custom blocks
   - not just formatted text but also diagramming blocks
@@ -24,25 +24,25 @@ see [[https://roadmap.archbee.io/][roadmap]], [[https://www.archbee.io/alternati
   - Org would add this
   - thesis ❓: proactive knowledge management benefits from productivity/task-management primitives built-in within the suite where knowledge is managed
 - ➖ Git access only with the mid-tier plan
-  - expensive at 125 USD/mo for 10 seats (see [[https://www.archbee.io/pricing][pricing]])
+  - *expensive* at 125 USD/mo for 10 seats (see [[https://www.archbee.io/pricing][pricing]])
   - not git-centric
 - ➖ API-access only with the mid-tier plan
-  - expensive at 125 USD/mo for 10 seats (see [[https://www.archbee.io/pricing][pricing]])
+  - *expensive* at 125 USD/mo for 10 seats (see [[https://www.archbee.io/pricing][pricing]])
   - not API-centric
 
 ** Docs
 
 *** Developer Docs
 
-[[file:img/archbee-dev-docs-5f86d07e87d6921f5f971c24_dev docs-p-2000.png]]
+[[file:img/archbee-dev-docs-5f86d07e87d6921f5f971c24.png]]
 
 *** Wiki
 
-[[file:img/archbee-wiki-kb-6059dfc0e70d783fa2a00eb2_Screen Shot 2021-03-23 at 2.31.33 PM-p-2000.png]]
+[[file:img/archbee-wiki-kb-6059dfc0e70d783fa2a00eb2.png]]
 
 ** Editing
 
-sourced from https://www.archbee.io/alternatives/confluence-alternative and https://www.archbee.io/alternatives/notion-alternative
+sourced from [[https://www.archbee.io/alternatives/confluence-alternative]] and [[https://www.archbee.io/alternatives/notion-alternative]]
 
 *** Markdown
 
