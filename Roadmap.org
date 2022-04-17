@@ -1,15 +1,49 @@
 #+TITLE: Roadmap
 #+TODO: IDEA SCOPE INSKETCH INDEV | DONE(d)
 
-* IDEA Login with GitHub
+⚠️ All points in this roadmap are listed in their relative order of importance. In case points get reordered in this document, it should be interpreted as a change in prioritization. Points are ordered by highest priority first.
 
-As a GitHub user, I want to be able to login with my GitHub handle and just collaborate in a formation.tools space.
-
-* IDEA Present Org file
-
-As a non-Emacs user, I want to be able to conveniently read Org-files.
+* IDEA Present basic Org file [0/9] :org:
 
 As an Emacs user, I want to be able to obtain a better visual overview of Org-files without too much tinkering in Elisp.
+
+Until auth is implemented, the Org files supported are the Org files in public GitHub repositories.
+
+** IDEA Present Org text formatting
+
+As a user, I want to be able to conveniently read Org-files with text markup (/italics/, *bold*, +strikethrough+, _underline_, =verbatim= and ~code~) as demonstrated in the snippet below:
+
+#+begin_src org
+- **BOLD**
+- *bold*
+- /ITALICIZED/
+- _underline_
+- +STRIKETHROUGH+
+- ~code~
+- =verbatim=
+#+end_src
+
+** IDEA Present Org header hierarchies
+
+As a user, I want to be able to conveniently navigate header hierarchies such as the one demonstrated in the snippet below:
+
+#+begin_src org
+,* Header 1
+
+A line to introduce header 1.
+
+,** Header 2A
+
+Some content for header 2.
+
+,** Header 2B
+
+More content
+
+,*** Header 2B.1
+
+A sub-header to 2B.
+#+end_src
 
 ** IDEA Display header states for the active file
 
@@ -41,7 +75,7 @@ As a reader, I want to be able to collapse sections that I am not currently read
 
 As a reader, I want to be able to expand sections that I am interested in to reveal their content.
 
-** IDEA Emphasize states such that it is clear which tasks are part of an Org file
+** IDEA Emphasize TODO states in Org files
 
 Within the TOC as well as within the main view, state information should be emphasized in a way that makes it easy to recognize.
 
@@ -52,3 +86,44 @@ As a reader, I want to see who last changed a particular part of a document (lin
 When hovering over a section, a listing of all who contributed to that section would be expected.
 
 When hovering over a line, a list of the last person to commit that line would be expected.
+
+** IDEA Show in-line comments
+
+As a user, I want to be able to examine Org comment blocks within the document. Not sure if we want to do this like GitHub or Google Docs so this is something our designers will need to find design candidates for.
+
+** IDEA Display code blocks with syntax highlighting
+
+As a reader, I want to see all code blocks with the appropriate syntax highlighting. 
+
+* IDEA Login with GitHub :auth:
+
+As a GitHub user, I want to be able to login with my GitHub handle and just collaborate in a formation.tools space.
+
+Without GitHub auth, users will only be able to use formation.tools agains public repositories.
+
+* IDEA Present basic Org tables [0/3] :org:
+
+As a user, I want to be able to create and edit tables in Org documents.
+
+** IDEA Show all data columns and rows for an Org table
+
+As a user, I want to see all data rows and columns
+
+** IDEA Highlight column and row that mouse hovers over
+
+As a user, I want the row and column that are hovered over by the cursor to be highlighted for easier orientation.
+
+** IDEA Highlight all computed fields, columns and/or rows
+
+As a user, I want to have a visual cue of all fields, columns or rows that are computed through formulas. A particular background color may suffice to indicate that the content of a particular cell is not entered directly but rather "calculated".
+
+** IDEA Present special purpose rows
+
+Some rows serve special purposes to:
+- name every column: (symbol =!=)
+- name fields:
+  - name the fields above the naming row (symbol =^=)
+  - name the fields below the naming row (symbol =_=)
+- hide row from being exported (symbol =/=)
+- define formulate parameters (symbol =$=)
+- arm for automatic recalculation when values change (symbol =#= or =*= for global which is more computationally expensive)
