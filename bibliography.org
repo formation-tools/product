@@ -80,3 +80,179 @@ Unlike [competitors or current models], our product [main differentiators].
     4. goal for co/team to achieve
        - big and bold?!?
        - goals should be underlined with motivation behind it (answer *why*)
+
+* Technical Documentation for Startups: The good, the bad and the ugly
+:PROPERTIES:
+:BIB_TITLE: Technical Documentation for Startups: The good, the bad and the ugly
+:BIB_BTYPE: misc
+:CUSTOM_ID:
+:BIB_AUTHOR: Claudiu
+:BIB_HOWPUBLISHED: https://www.archbee.io/blog/technical-documentation
+:BIB_NOTE:
+:BIB_ANNOTE:
+:END:
+
+Archbee is basically what we want with more Org-capabilities.
+
+#+begin_src org
+,#+TITLE: Technical Specifications
+
+,* Summary
+
+2-3 sentences describing who/what/when/where/why of the project.
+
+,* Background
+
+The /why/ and the existing context
+
+,* Goals
+
+Expected outcomes, both objective and subjective.
+
+,* Non-Goals
+
+What are you intentionally not doing? Define and limit scope!
+
+,* Plan
+
+The longest part. Level of detail depends on audience. Describe engineering approach, include diagrams.
+
+,* Measuring Impact
+
+Which metrics will you track to monitor the progress of the project?
+
+,* Security, Privacy, Risks
+
+What are potential risks and how are we mitigating?
+
+,* Other Considerations
+
+Other approaches considered but decided against.
+
+,* Milestones
+
+Break project into intermediate milestones
+#+end_src
+
+* Local-first software: you own your data, in spite of the cloud
+:PROPERTIES:
+:BIB_TITLE: Local-first software: you own your data, in spite of the cloud
+:BIB_BTYPE: article
+:CUSTOM_ID:
+:BIB_AUTHOR: Martin Kleppmann and Adam Wiggins and Peter van Hardenberg and Mark McGranaghan
+:BIB_JOURNAL: ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward!)
+:BIB_YEAR: 2019
+:BIB_VOLUME:
+:BIB_NUMBER:
+:BIB_PAGES: 154–178
+:BIB_MONTH: October
+:BIB_NOTE:
+:BIB_URL:  https://www.inkandswitch.com/local-first/
+:BIB_DOI:  10.1145/3359591.3359737
+:BIB_ANNOTE:
+:END:
+
+#+begin_src bibtex
+@Article{Kleppman2019,
+  author =       {Martin Kleppmann and Adam Wiggins and Peter van Hardenberg and Mark McGranaghan},
+  title =        {Local-first software: you own your data, in spite of the cloud},
+  journal =      {ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward!)},
+  year =         {2019},
+  OPTkey =       {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTpages =     {154–178},
+  OPTmonth =     {October},
+  OPTnote =      {},
+  url =          {https://www.inkandswitch.com/local-first/},
+  doi =          {10.1145/3359591.3359737},
+  OPTannote =    {}
+}
+#+end_src
+
+- mentioning git as "old-fashioned" app
+
+Outlines *local-first software* principles:
+1. fast
+   - elimination of server-to-server roundtrip latency
+   - near-instantaneous reponsiveness because local-storage is leading
+2. multi-device
+   - facilitation of multi-devices work is needed (e.g.: between mobile and computer)
+   - cross-device sync is necessary
+   - presents a collaboration challenge (when multiple people change same artefact)
+3. offline
+   - while in-transit (plane or train)
+   - while travelling (due to steep roaming costs)
+4. collaboration
+   - Google Docs like live edit capability
+   - GitHub PR-like or Google Docs suggestion-like change management
+5. longevity
+   - solution outliving the maker of the related software
+     - does not apply to cloud software (when company dies, software dies)
+   - sticking with older version is not an option
+     - updates are forced and often implicit
+6. security/privacy
+   - E2E encryption
+   - reduced reliance on cloud provider's security team
+   - unambigious read-ability (with cloud software it is unclear what vendor can really read)
+7. ownership/control
+   - provider can lock out users
+
+#+begin_quote
+We believe professional and creative users deserve software that realizes the local-first goals, helping them collaborate seamlessly while also allowing them to retain full ownership of their work. If we can give users these qualities in the software they use to do their most important work, we can help them be better at what they do, and potentially make a significant difference to many people’s professional lives.
+#+end_quote
+
+#+begin_quote
+We think the Git model points the way toward a future for local-first software. However, as it currently stands, Git has two major weaknesses:
+
+1. Git is excellent for asynchronous collaboration, especially using pull requests, which take a coarse-grained set of changes and allow them to be discussed and amended before merging them into the shared master branch. But Git has no capability for real-time, fine-grained collaboration, such as the automatic, instantaneous merging that occurs in tools like Google Docs, Trello, and Figma.
+2. Git is highly optimized for code and similar line-based text files; other file formats are treated as binary blobs that cannot meaningfully be edited or merged. Despite GitHub’s efforts to display and compare images, prose, and CAD files, non-textual file formats remain second-class in Git.
+#+end_quote
+
+https://news.ycombinator.com/item?id=30983770
+
+** Storage options
+
+- Realm
+  - ➖ for iOS
+  - client-side lib called /Realm Database/
+  - Firebase-like backend service called /Realm Object Server/
+    - FLOSS, see [[https://github.com/realm/realm-object-server][GitHub repo]]
+- CouchDB
+  - multi-master replication
+  - client-side variants are *Hoodie and PouchDB*
+  - ➖ failed to win adoption b/c
+    - complexity of authoring merge resolution logic
+    - scalability issues (when using separate db per user)
+    - difficulty in embedding JS client in iOS and Android apps
+    - unfamiliar MapReduce pattern for queries
+- CRDTs
+  - provide git-like collaboration and merge monitoring capability
+  - with the notable diff being:
+    - flexible granularity (unlike git where the granularity is a "line")
+    - communication-channel agnostic (unlike git which comms over HTTP or SSH)
+
+- Ink & Switch findings
+  - *Automerge*, JS CRDT implementation
+    - based on earlier JSON CRDT research
+    - merged with Dat Networking Stack to form *Hypermerge*
+  - prototypes
+    - guiding questions
+      - tech viability
+      - UX
+      - DX
+    - Trello-like (collaborative Kanban tool)
+    - Miro-like (collaborative media canvas tool)
+    - Figma-like (collaborative design tool)
+  - finding
+    - CRDTs + FRP provides viable DX
+    - visualize doc history
+      - think: time travel
+    - URL as sharing medium
+    - CRDTs accumulate large change history
+      - perf issue
+      - unknown from which point onwards history needs to be kept
+        - event streaming-like
+    - networking unsolved
+      - WebRTC vs IPFS vs Hypercore P2P?
+      - P2P tricky because of NAT traversal
