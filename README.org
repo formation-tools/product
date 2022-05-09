@@ -1,5 +1,6 @@
 :PROPERTIES:
 :CUSTOM_ID: formation.tools/product-vision
+#+STARTUP: overview
 :END:
 #+title: Product Vision formation.tools
 
@@ -22,10 +23,14 @@
     - current tooling feels like a chore
     - current tooling is proprietary and locks users in
     - *fun work is done work* ⭐
-- knowledge sharing
+- effective knowledge sharing
   - wiki-like
-  - FAQ-like, leveraging QA tooling
-  - knowledge graph-like to present visual hierarchies of information for faster navigation
+  - FAQ-like, leveraging QA (question-answering) aids where sensible
+  - multi-modal focus
+    - knowledge-graph-like representation to aid folks that navigate information visually
+    - facilities for graphing
+    - facilities for narration
+    - facilities for video embedding
 
 ** Competitive Landscape
 
@@ -38,7 +43,6 @@ Ranked in order of how close they are to solving the problem our way (top is clo
 | Confluence | Jira             | openness (API is horrible, centralized)                                           |
 | Org        | Emacs            | inaccessible to non-Emacs users, too flexible when you start tinkering with elisp |
 |            |                  |                                                                                   |
-
 
 * Vision Statement
 
@@ -103,6 +107,10 @@ Engineers documenting in repository READMEs, product folks documenting in [Confl
 - What is the narrative around the data that may not fit within the rigid structure of the format chosen?
 
 * TODO Value Proposition
+
+- decentralized
+  - data in git is authoritative (all team members with a clone of the repo should have the full history for the scopes that interest them)
+- knowledge and process information localized
 
 * TODO Product Objectives
 
