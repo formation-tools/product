@@ -5,9 +5,9 @@
 
 ⚠️ All points in this roadmap are listed in their relative order of importance. In case points get reordered in this document, it should be interpreted as a change in prioritization. Points are ordered by highest priority first.
 
-* TODO [#A] Present Org document [0/17] :org:
+* TODO [#A] Present Org document [0/0] :org:
 :PROPERTIES:
-:COOKIE_DATA: recursive
+:COOKIE_DATA: todo checkbox recursive
 :END:
 
 As an Emacs user, I want to be able to obtain a better visual overview of Org-files without too much tinkering in Elisp.
@@ -16,15 +16,15 @@ As a non-Emacs user, I want to be able to read Org files with the basic convenie
 
 Until auth is implemented, the Org files supported are the Org files in *public GitHub repositories*.
 
+🚧 Any syntax for which there is no parsing or rendering logic available will be presented as *fixed-width plaintext*.
+
 ** SCOPE [0/49] Parse Org standard :parser:
 :PROPERTIES:
-:COOKIE_DATA: recursive
+:COOKIE_DATA: checkbox recursive
 :END:
 
 :BACKGROUND:
 For all elements of the org standard, we will eventually have to implement parsing and rendering logic. The [[https://orgmode.org/worg/dev/org-syntax.html][syntax reference]] provides a breakdown of the elements that will need to be presented.
-
-🚧 Any syntax for which there is no parsing or rendering logic available will be presented as *fixed-width plaintext*.
 :END:
 
 The [[https://orgmode.org/worg/dev/org-syntax.html][org-syntax reference]] defines:
@@ -85,7 +85,7 @@ The [[https://orgmode.org/worg/dev/org-syntax.html][org-syntax reference]] defin
     - [ ] *LaTeX environments*
     - [ ] *node properties*
 
-*** TODO Figure out difference between *greater blocks* and *dynamic blocks*
+** DONE Figure out difference between *greater blocks* and *dynamic blocks*
 
 See https://orgmode.org/worg/dev/org-syntax.html#Greater_Elements
 
