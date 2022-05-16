@@ -18,6 +18,14 @@ Until auth is implemented, the Org files supported are the Org files in *public 
 
 🚧 Any syntax for which there is no parsing or rendering logic available will be presented as *fixed-width plaintext*.
 
+** Screenshots
+
+The following screenshots provide an impression of what this page looks like in Emacs. Some headers are folded while other are expanded.
+
+[[file:img/emacs-roadmap.2022.05.16.dark.png]]
+
+[[file:img/emacs-roadmap.2022.05.16.light.png]]
+
 ** SCOPE [0/49] Parse Org standard :parser:
 :PROPERTIES:
 :COOKIE_DATA: checkbox recursive
