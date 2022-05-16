@@ -2,11 +2,11 @@
 :CUSTOM_ID: formation.tools/product-vision
 #+STARTUP: overview
 :END:
-#+title: Product Vision formation.tools
+#+title: Product Vision
 
 * Goal
 
-🎯 Facilitate *joyful collaboration* and efficient *knowledge sharing* between teams in tech startups that may be *in the office or on-the-go*.
+🎯 Facilitate *collaboration* (knowledge sharing and work planning) within tech teams that may be *in the office or on-the-go* in a manner that is considerably less frustrating that using too many different tools or Confluence.
 
 - joyful collaboration
   - snappy tooling (facilitate the speed of thought)
@@ -32,53 +32,127 @@
     - facilities for narration
     - facilities for video embedding
 
-** Competitive Landscape
+* Landscape
 
 Ranked in order of how close they are to solving the problem our way (top is closer, lower is further away)!
 
-| Competitor | Killer feature   | Missing feature                                                                   |
-|------------+------------------+-----------------------------------------------------------------------------------|
-| [[https://www.archbee.io/integrations][Archbee]]    |                  | Org-capabilities (tasks, planning, productivity)                                  |
-| Notion     | mobile-firstness | openness (proprietary formats, complex API with /block/ as primitive entity)      |
-| Confluence | Jira             | openness (API is horrible, centralized)                                           |
-| Org        | Emacs            | inaccessible to non-Emacs users, too flexible when you start tinkering with elisp |
-|            |                  |                                                                                   |
+| Solution            | Plaintext | Offline | Collaboration | Git | Narrative | Productivity | Automation | Killer feature   | Total Score | Missing feature                                                                   | Comment                                 |
+|---------------------+-----------+---------+---------------+-----+-----------+--------------+------------+------------------+-------------+-----------------------------------------------------------------------------------+-----------------------------------------|
+| [[https://www.archbee.io/integrations][Archbee]]             |         0 |         |               |   1 |           |            0 |            |                  |             | Org-capabilities (tasks, planning, productivity)                                  |                                         |
+| Notion              |         0 |         |               |     |           |            1 |            | mobile-firstness |             | openness (proprietary formats, complex API with /block/ as primitive entity)      |                                         |
+| Confluence          |         0 |         |               |     |           |            1 |            | Jira             |             | openness (API is horrible, centralized)                                           |                                         |
+| Org Mode (in Emacs) |         1 |         |               |   1 |           |            1 |            | Emacs            |             | inaccessible to non-Emacs users, too flexible when you start tinkering with elisp |                                         |
+| LogSeq              |         1 |         |               |   1 |           |            1 |            |                  |             |                                                                                   | 💡 Possible base for a non-Emacs client |
+| Workflowy           |         0 |         |               |     |           |              |            |                  |             |                                                                                   |                                         |
+| TiddlyWiki          |           |         |               |     |           |              |            |                  |             |                                                                                   |                                         |
+| HedgeDoc            |         1 |         |               |   1 |           |              |            |                  |             |                                                                                   |                                         |
+| Linear              |           |         |               |     |           |              |            |                  |             |                                                                                   |                                         |
+| Obsidian            |         1 |         |               |   1 |           |              |            |                  |             |                                                                                   | 💡 Possible base for a non-Emacs client |
+| Roam Research       |         1 |         |               |   1 |           |              |            |                  |             |                                                                                   |                                         |
+| RemNote             |         1 |         |               |   1 |           |              |            |                  |             |                                                                                   |                                         |
 
-* Vision Statement
+** TODO Add links for all solutions in table
 
-For *smaller tech startups* where information management and knowledge management are key to success, who need to *maintain an overview over knowledge-work and coordinate work between disciplines*, the =formation.tools= platform is a /productivity, collaboration and knowledge-management/ suite that is *API-centric, ChatOps-centric and plaintext-centric*.
+Just like the Archbee entry, we'd like to have the links for all other solutions to facilitate fast access.
 
-** Why's
+** TODO List scores for all attributes
 
-- why *smaller tech startups*?
-  - already familiar with change management (for their code)
-  - existential need to ace their "information game"
-  - already familiar with git
-- why *API-centric*?
-  - all features should accessible through a public API
-    - to simplify integrations with other systems (in the spirit of *open systems*)
-  - users and customers should be enabled to tie the solution into their own tooling
-  - *good tools make their use easy* ⭐
-    - support or guidance needs to be unnecessary (good lithmus test) or built-in
-- why *ChatOps-centric*?
-  - all features should be accessible through chat because of accessibility
-  - many folks will not have access to their forge or wiki on the go, but they will have access to their chat tool -- work can't be accessible to those behind computers only, it's 2022+ 🤷🏿‍♂️
-- why *plaintext-centric*
+** TODO Calculate sum for the attributes of every entry
+
+** Attribute Clarification
+
+*** Plain-text Friendliness
+
+Is information stored in an open plaintext standard (e.g.: Markdown, ReStructuredText, Org, etc.) or in a proprietary format (like Confluence's or Notion's custom formats)? 1 = OPEN, 0 = NOT SO OPEN.
+
+*** Offline Friendliness
+
+Does the solution facilitate work/progress whilst offline?
+
+*** TODO Collaboration Friendliness
+*** Git Friendliness
+
+Does the solution allow for use through git facilitating history visibility (git log-like), attribution visibility (git blame-like) and change visibility (git diff-lie)?
+
+[[*Plain-text Friendliness][Plain-text Friendliness]] would imply Git friendliness.
+
+*** Narrative Friendliness
+
+Does the solution allow for storytelling?
+
+The assumption is that most artefacts (diagrams, images, formulas, tables, etc.) require context that is ideally described in a narrative style. This allows for consumption of this information for a wide audience (think: a11y) as braille readers, text2speech engines and other tools can be utilized to provide a mapping from the "plain text" format into whichever representation is more convenient for the observer.
+
+*** TODO Productivity Friendliness
+
+Does the solution allow for task/project management?
+
+*** TODO Automation Friendliness
+
+Does the solution offer facilities for automation e.g.: triggering logic to source data for tables (if tables are supported) and triggering hooks upon the completion of tasks (if task management is supported).
+
+* Vision
+
+A productivity, collaboration and knowledge-management solution that is:
+- plaintext-centric
   - everything should be editable as plaintext
-    - trackable in git
-      - *distributed* version management
-        - derisks data loss
-        - provides historic context
-      - history with *traceability* of who contributed which segment of the text (i.e.: git-blame, relates to /provenance/)
-        - clear path towards rolling back to previous state
-      - familiar, *tried and tested paradigm* for distributed change management
-      - facilitates more *explicit approval processes* that are akin to merge processes (think: PR's) -- more documents should be written this way
+    - because this is trackable in version management solutions
+    - because this is more accessible
+      - doesn't require specialized tooling
+      - larger likelihood of being readable in the far future
+      - reduces longevity or continuity concerns 
   - stick to *Org and Markdown* as much as possible
     - existing standards
+      - to increase usability surface
+      - to avoid "reinventing the wheel"
     - leverage and supercharge that which is already there ⭐
       - don't add to the problem by introducing new standards
     - easy to read (almost WYSIWYG)
     - Org allows for *productivity* workflows that are underleveraged
+- API-centric
+  - all features should accessible through a public API
+    - to simplify integrations with other systems (in the spirit of *open systems*)
+      - users and customers should be enabled to tie the solution into their own tooling
+    - to simplify development of integrations by users community
+- ChatOps-friendly
+  - all features should be accessible through ChatOps integrations (builds upon API-centricness)
+  - many folks will not have access to forges or wiki on the go but will have access to their formation's chat tool
+    - work can't be accessible to those behind computers only, it's 2022+ 🤷🏿‍♂️
+- performant (snappy)
+- admin-light
+- easy-to-use
+- pleasant
+- open to migrate into or out of
+- git-centric
+  - *distributed* version management
+    - derisks data loss
+    - provides historic context
+  - history with *traceability* of who contributed which segment of the text (i.e.: git-blame, relates to /provenance/)
+    - clear path towards rolling back to previous state
+  - familiar, *tried and tested paradigm* for distributed change management
+  - facilitates more *explicit approval processes* that are akin to merge processes (think: PR's) -- more documents should be written this way
+
+* Guiding Principles
+
+- *good tools make their use easy* ⭐
+  - support or guidance needs to be almost unnecessary if a tool is well-designed
+  - good tools leverage known and trusted paradigms and patterns to aid in adoption
+  - good tools are almost invisible
+- *don't reinvent wheels* 🛞
+  - leverage and supercharge that which is already there ⭐
+  - contribute to existing efforts
+    - improves existing tools
+    - improves existing ecosystems
+    - minimize /tooling crowdedness/
+      - this minimizes tool selection pain
+  - *reuse known paradigms*
+    - users are already familiar with change management (for their code)
+      - already familiar with git
+- existential need to ace their "information game"
+
+- why *smaller tech startups*?
+- why *API-centric*?
+- why *ChatOps-centric*?
+- why *plaintext-centric*
 
 * Customer
 
@@ -97,6 +171,15 @@ Tech startups need to draft and maintain a variety of documents product that may
 - those who need information on a particular company-specific topic
   - asking questions
 
+Teams that:
+- require efficient information and knowledge management
+  - because of complexity of their work
+  - because of required momentum/speed of operation
+  - because of resource constraint and efficiency objective
+- typical candidates are
+  - small technology development formations
+  - small research formations
+
 ** Example
 
 Engineers documenting in repository READMEs, product folks documenting in [Confluence or alt 🤬] and business folks documenting in spreadsheets versioned by file prefixes 😭 is a collaboration paradigm where too much uncertainty exists about the notion of a /source of truth/ leading to the following question:
@@ -105,6 +188,10 @@ Engineers documenting in repository READMEs, product folks documenting in [Confl
 - When was it last refreshed/retrieved?
 - Who has redacted this data over time?
 - What is the narrative around the data that may not fit within the rigid structure of the format chosen?
+
+** TODO Formulate personas
+
+https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them
 
 * TODO Value Proposition
 
