@@ -5,7 +5,7 @@
 
 ⚠️ All points in this roadmap are listed in their relative order of importance. In case points get reordered in this document, it should be interpreted as a change in prioritization. Points are ordered by highest priority first.
 
-* TODO [#A] Present Org document [0/0] :org:
+* TODO [#A] Present basic Org document [0/0] :org:phase1:
 :PROPERTIES:
 :COOKIE_DATA: todo checkbox recursive
 :END:
@@ -25,6 +25,21 @@ The following screenshots provide an impression of what this page looks like in 
 [[file:img/emacs-roadmap.2022.05.16.dark.png]]
 
 [[file:img/emacs-roadmap.2022.05.16.light.png]]
+
+** INSKETCH Design component library :ui:
+
+For starters, we will need some sketches for [[https://www.figma.com/file/SAexH1WXviI2TCfN4TCrGn/formation.tools?node-id=203%3A522][components [Figma]​]] and some sketches for the first [[https://www.figma.com/file/SAexH1WXviI2TCfN4TCrGn/formation.tools?node-id=177%3A512][pages [Figma]​]].
+
+The [[*Parse Org standard][Parse Org standard]] section provides a breakdown of *all Org components* that we will need to support to obtain *100% Org-compatibility*, but the approach is to take some babysteps towards this goal and therefore we will focus on implementing the components that describe the non-Parse sections first. Some of these sections are:
+- [[*Present Org heading hierarchies][Present Org heading hierarchies]]
+- [[*Present header states for the active file][Present header states for the active file]]
+- [[*Present a TOC of an Org file][Present a TOC of an Org file]]
+- [[*Present all headers as collapsible sections][Present all headers as collapsible sections]]
+- [[*Emphasize TODO states in Org files][Emphasize TODO states in Org files]]
+- [[*Show author for part of a document when hovering over it][Show author for part of a document when hovering over it]]
+- [[*Present in-line comments][Present in-line comments]]
+- [[*Present code blocks with syntax highlighting][Present code blocks with syntax highlighting]]
+- [[*Present basic Org tables][Present basic Org tables]]
 
 ** SCOPE [0/49] Parse Org standard :parser:
 :PROPERTIES:
@@ -217,7 +232,7 @@ Some rows serve special purposes to:
 - define formulate parameters (symbol =$=)
 - arm for automatic recalculation when values change (symbol =#= or =*= for global which is more computationally expensive)
 
-* IDEA [#B] Load public GitHub repos :auth:
+* IDEA [#B] Load public GitHub repos :auth:phase1:
 
 The flow to be implemented is:
 1. source public GitHub repository name through a text input (see [[https://www.figma.com/file/SAexH1WXviI2TCfN4TCrGn/David-Asabina%3A-UI-Design?node-id=54%3A270][Figma]])
@@ -227,13 +242,13 @@ The flow to be implemented is:
 
 To be designed.
 
-* IDEA [#C] Login with GitHub :auth:
+* IDEA [#C] Login with GitHub :auth:phase2:
 
 As a GitHub user, I want to be able to login with my GitHub handle and just collaborate in a formation.tools space.
 
 Without GitHub auth, users will only be able to use formation.tools against public repositories.
 
-* IDEA Implement edit capability
+* IDEA Implement edit capability :phase3:
 
 To be defined. Editing directly on a git tree with edit support for a select view component types may be a most basic way to start. The question here will be how to delineate chunks of changes as submitting commits for minor changes will likely be counterproductive. The branching and merging strategy will need to be thought through. Eventually, collaborative editing may creep into scope but we'll cross that bridge when we reach it (if we even get there 🤷🏿‍♂️).
 
